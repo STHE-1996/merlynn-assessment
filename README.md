@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Drink Choice Application
+
+This application is built using **Next.js**, **React**, **TailwindCSS**, **MongoDB**, , **sharedcn**,and **Mongoose**. It integrates with the [TOM API](https://docs.up2tom.com) to pull metadata, allow users to make decisions, and store results. This project showcases skills in **Next.js framework usage** and **API integration**.
+
+---
+
+## Features
+
+1. **Metadata Retrieval**: Pulls metadata from the TOM API for the "Drink choice" model https://api.up2tom.com/v3/models/58d3bcf97c6b1644db73ad12.
+2. **User Decision Form**: Displays a form for users to provide input variables and submit decisions.
+3. **API Integration**:
+   - Fetch metadata using the `v3/models` and `v3/models/{id}` endpoints.
+   - Submit user inputs to the `v3/decision/{id}` endpoint.
+4. **Data Storage**: Saves user decisions and input variables using MongoDB.
+5. **Security**: Includes basic security best practices like `.env` for API keys and sanitized API requests.
+6. **Batch Functionality**: Implements batch requests for bulk decision-making.
+7. **Model Selection**: Allows users to select any model from the TOM API dynamically.
+
+---
+
+## Prerequisites
+
+- **Node.js** (v16 or higher)
+- **MongoDB** (local or cloud database)
+- TOM API Key (provided in the requirements)
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/your-username/drink-choice-app.git
+cd drink-choice-app
