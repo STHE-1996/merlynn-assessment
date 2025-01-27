@@ -28,8 +28,19 @@ This application is built using **Next.js**, **React**, **TailwindCSS**, **Mongo
 
 ## Getting Started
 
-### 1. Clone the Repository
+### 1. Clone the Repository 
 
 ```bash
-git clone https://github.com/your-username/drink-choice-app.git
-cd drink-choice-app
+git clone https://github.com/STHE-1996/merlynn-assessment.git
+cd merlynn-assessment
+
+
+### 2. Make sure you have Node.js and npm installed. Then, install the required dependencies:
+
+npm install
+
+Start the Next.js development server:
+
+npm run dev
+
+
